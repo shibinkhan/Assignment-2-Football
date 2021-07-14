@@ -132,7 +132,9 @@ main {
     color: #562EFF;
 }
 
-
+/*----------------------------
+            Extra 2nd sec
+----------------------------*/
 
 
 .partner hr{
@@ -147,7 +149,7 @@ main {
     margin-top: 25px;
 }
 .partner-logo {
-    margin-left: 260px;
+    margin-left: 200px;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
 }
@@ -211,6 +213,9 @@ footer p {
         margin: 100px auto 0px;
     }
 }
+@media only screen and (max-width:900px) {
+    
+}
 @media only screen and (max-width:720px) {
     #article-section {
         grid-template-columns: repeat(1, 1fr);
@@ -229,13 +234,7 @@ footer p {
         grid-template-columns: repeat(1, 1fr);
     }
     
-        .partner {
-            width: 100%;
-        } 
-        .partner-logo {
-            grid-template-columns: repeat(2, 1fr);
-            margin-left: 150px;
-        }
+        
 }
 @media only screen and (max-width:360px) {
     .header-left p {
@@ -252,17 +251,29 @@ footer p {
         margin-left: 75px;
     }
 }
-@media only screen and (max-width: 888px){
+@media only screen and (max-width: 900px){
     .container-items{
         width: 100%;
-        margin-left: 200px;
     }
     .blogs{
         grid-template-columns: repeat(1, 2fr);
+    }
+    .partner {
+        width: 100%;
+    } 
+    .partner-logo {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+        
     }
 }
 @media only screen and (max-width: 615px) {
     .blog {
         flex-direction: column;
+    }
+    .partner-logo {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        
     }
 }
